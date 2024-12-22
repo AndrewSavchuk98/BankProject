@@ -72,6 +72,22 @@ nlohmann::json User::toJson() const {
     };
 }
 
+User User::fromJson(const nlohmann::json& json) {
+    User user;  // Create a new User object
+
+    // Deserialize the fields from JSON
+    user.id = json["id"].get<int>();            // Assuming 'id' is an int
+    user.name = json["name"].get<std::string>(); // Assuming 'name' is a string
+    user.email = json["email"].get<std::string>(); // Assuming 'email' is a string
+    user.phone = json["phone"].get<std::string>(); // Assuming 'phone' is a string
+    user.userType = json["userType"].get<std::string>(); // Assuming 'userType' is a string
+    user.role = json["role"].get<std::string>(); // Assuming 'role' is a string
+    user.password = json["password"].get<std::string>(); // Assuming 'password' is a string
+    user.created = json["created"].get<std::string>(); // Assuming 'created' is a string (could be a date)
+
+    return user;  // Return the populated User object
+}
+
 User::User() {
 
 }

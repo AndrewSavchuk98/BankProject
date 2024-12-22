@@ -69,6 +69,11 @@ int main() {
     bank.addAccount(account);
     bank.addAccount(account2);
 
+    // for (int i = 0; i <  bank.getAccounts().size(); i++) {
+    //     bank.getAccounts()[i]->show();
+    // }
+
+    bank.getAccounts()[0]->show();
     // bank.addAccount(account);
     // bank.addAccount(account2);
     //

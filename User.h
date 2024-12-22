@@ -47,6 +47,8 @@ public:
 
     // A method to convert this class instance to a nlohmann::json object
     nlohmann::json toJson() const;
+
+    User fromJson(const nlohmann::json &json);
 };
 
 

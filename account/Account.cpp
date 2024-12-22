@@ -56,3 +56,21 @@ nlohmann::json Account::toJson() {
         {"status", status}
     };
 }
+
+Account Account::fromJson(const nlohmann::json& json) {
+    Account account;  // Create a new Account object
+
+    // Deserialize the fields from JSON
+    account.id = json["id"].get<int>();  // Assuming id is of type int
+    User user;
+    account.applicant = user.fromJson(json["applicant"]);
+    account.date = json["date"].get<std::string>();  // Assuming date is a string
+    account.status = json["status"].get<std::string>();  // Assuming status is a string
+
+    return account;  // Return the populated Account object
+}
+
+
+
+
+

@@ -36,6 +36,10 @@ public:
 
     nlohmann::json toJson();
 
+    Account fromJson(const nlohmann::json &json);
+
+    Account toAccount();
+
 };
 
 

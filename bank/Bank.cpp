@@ -6,6 +6,18 @@
 
 
 vector<Account*> Bank::getAccounts() {
+    ifstream accountsFile(filename);
+    nlohmann::json accountsJson;
+
+    if (accountsFile.is_open()) {
+        accountsJson = nlohmann::json::parse(accountsFile);
+    }
+    vector<Account*> accounts;
+    for (int i = 0; i < accountsJson.size(); i++) {
+        Account* account = new Account();
+        account->fromJson(accountsJson[i]);
+        accounts.push_back(account);
+    }
     return accounts;
 }
 
@@ -28,7 +40,6 @@ string Bank::getId() {
 }
 
 void Bank::addAccount(Account *account) {
-    const string filename = "../accounts.json";
 
     nlohmann::json data;
 
@@ -55,6 +66,8 @@ void Bank::showAccounts() {
         cout << "*********************************" << endl;
     }
 }
+
+
 // Написати функцію, яка приймає ім'я і віддає тільки Акаунти Користувача з цим ім'ям
 void Bank::showFilteredAccounts(string name) {
     for (int i = 0; i < accounts.size(); i++) {
@@ -64,6 +77,7 @@ void Bank::showFilteredAccounts(string name) {
         }
     }
 }
+
 
 void Bank::showFilteredAccountsByStatus(string status) {
     for (int i = 0; i < accounts.size(); i++) {

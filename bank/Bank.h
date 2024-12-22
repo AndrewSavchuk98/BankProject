@@ -18,6 +18,7 @@ private:
     string name;
     string address;
     vector<Account*> accounts;
+    const string filename = "../accounts.json";
 public:
     Bank(string name, string address);
 
@@ -32,6 +33,7 @@ public:
     void showFilteredAccounts(string name);
 
     void showFilteredAccountsByStatus(string status);
+
 };
 
 
