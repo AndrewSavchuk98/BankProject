@@ -56,3 +56,29 @@ nlohmann::json Account::toJson() {
         {"status", status}
     };
 }
+
+double Account::getBalance()
+{
+    return balance;
+}
+
+void Account::addToBalance(double amount)
+{
+    if (amount < 0) {
+        amount = 0;
+    }
+
+    balance += amount;
+}
+
+void Account::minusFromBalance(double amount)
+{
+    if (balance > 0 and balance >= amount) {
+        balance -= amount;
+    }
+    else {
+        cout << "You can get only " << balance << endl;
+    }
+
+
+}

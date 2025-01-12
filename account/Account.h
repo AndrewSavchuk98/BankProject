@@ -16,6 +16,7 @@ private:
     User applicant;
     string date;
     string status;
+    double balance = 0;
 
 public:
     Account();
@@ -35,6 +36,20 @@ public:
     void show();
 
     nlohmann::json toJson();
+
+    // getBalance  // return balance
+
+    double getBalance();
+    
+    void addToBalance(double amount);
+
+    void minusFromBalance(double amount);
+    // void addToBalance(double amount)
+    // Додавати до  balance
+    //
+
+    // void minusFromBalance(double amount) 
+    // Віднімати від balance, але баланс не може бути меншим 0
 
 };
 

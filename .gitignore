@@ -2,6 +2,7 @@
 .idea/
 cmake-build-*/
 *.iml
+.vs/
 
 # Ignore specific system files
 *.log

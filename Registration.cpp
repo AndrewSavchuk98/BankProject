@@ -10,9 +10,12 @@ void Registration::registerUser(User user) {
 
     bool isValidEmail = validateEmail(user.getEmail());
     bool isPhoneValid = validatePhone(user.getPhone());
-    saveToFile(user);
     if (isValidEmail && isPhoneValid) {
-
+        saveToFile(user);
+    }
+    else
+    {
+        cout << "bad params" << endl;
     }
 }
 

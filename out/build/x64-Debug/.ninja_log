@@ -1,0 +1,26 @@
+# ninja log v5
+8	7962	7584018976401453	CMakeFiles/BankProject.dir/account/Account.cpp.obj	5adbdcdd29ac96f3
+5	8058	7584018977270957	CMakeFiles/BankProject.dir/User.cpp.obj	7250698272c11730
+1	8063	7584018977510814	CMakeFiles/BankProject.dir/main.cpp.obj	582ae2a82eea5315
+9123	11904	7584019015247328	BankProject.exe	c7af49463d1b6bf1
+18	8901	7584018986081016	CMakeFiles/BankProject.dir/bank/Bank.cpp.obj	30883d2f2d81c231
+15	9123	7584018988189798	CMakeFiles/BankProject.dir/Registration.cpp.obj	28bb4f0a99da8cc1
+12	6020	7584018956402633	CMakeFiles/BankProject.dir/utils/DateUtil.cpp.obj	852d3716bf065aae
+13	3156	7584019290407851	CMakeFiles/BankProject.dir/utils/DateUtil.cpp.obj	3910a093d207ee02
+6	7368	7584019332473754	CMakeFiles/BankProject.dir/User.cpp.obj	c88448e95261ab5b
+17	7421	7584019332623672	CMakeFiles/BankProject.dir/account/Account.cpp.obj	b624f715cbbf7234
+1	7512	7584019334542573	CMakeFiles/BankProject.dir/main.cpp.obj	9fce2b8badaf6d47
+20	7845	7584019337870665	CMakeFiles/BankProject.dir/bank/Bank.cpp.obj	21cb6e09c325cd1b
+10	8050	7584019340109381	CMakeFiles/BankProject.dir/Registration.cpp.obj	8a8daf2c2747875e
+8051	9323	7584019344661836	BankProject.exe	c7af49463d1b6bf1
+1	4290	7584028575659593	CMakeFiles/BankProject.dir/main.cpp.obj	9fce2b8badaf6d47
+4291	4837	7584028580476839	BankProject.exe	c7af49463d1b6bf1
+1	3983	7584034285351687	CMakeFiles/BankProject.dir/main.cpp.obj	9fce2b8badaf6d47
+3987	4321	7584034287870255	BankProject.exe	c7af49463d1b6bf1
+1	3481	7584035459618474	CMakeFiles/BankProject.dir/main.cpp.obj	9fce2b8badaf6d47
+3482	4173	7584035465758991	BankProject.exe	c7af49463d1b6bf1
+1	6767	7584053182684981	CMakeFiles/BankProject.dir/main.cpp.obj	9fce2b8badaf6d47
+8	6890	7584053184074198	CMakeFiles/BankProject.dir/account/Account.cpp.obj	b624f715cbbf7234
+13	7572	7584053190895348	CMakeFiles/BankProject.dir/Registration.cpp.obj	8a8daf2c2747875e
+19	8010	7584053195422767	CMakeFiles/BankProject.dir/bank/Bank.cpp.obj	21cb6e09c325cd1b
+8010	9160	7584053205941860	BankProject.exe	c7af49463d1b6bf1
